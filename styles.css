@@ -6,45 +6,45 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
 }
 
-#links a, #links a:hover{
-    color: #A11A1c;
-}
-
-a {
-    text-decoration: none;
-}
-
-#links a:hover {
-    opacity: 50%;
-}
-  
-
-.righty {
-    text-align: right;
-}
-
-.corner {
-    border-radius: 12px;
-    background-color: #282A35;
-    color: white;
-}
-
-.navbar {
-    background-color: white;
-    margin: auto -16px;
-    padding: 16px 32px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-}
-
-.sticky {
-	position: -webkit-sticky;
+header {
+    margin: auto;
+    position: -webkit-sticky;
 	position: sticky;
 	top: 0;
     z-index: 100;
 }
 
+.title-section{
+    padding: 3% 10% 7%;
+    text-align: left;
+} 
+
+.about-section {
+    width: 90%;
+    padding: 3% 5.5% 7%;
+    background-color: white;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.skills {
+    background-color: #282A35;
+    color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+.navbar {
+    padding: 16px 32px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
 .navbar-light .navbar-nav .nav-link{
+    font-weight: 300;
     color: #A11A1c;
 }
 
@@ -63,37 +63,31 @@ a {
     box-shadow: none;
 }
 
-.title-section{
+a, 
+a:hover {
     color: #A11A1c;
-    padding: 3% 10% 7%;
-    text-align: left;
-} 
-
-.fadeDown {
-    animation: fadeIn 0.6s ease-in;
+    text-decoration: none;
 }
 
-.fadeLeft {
-    animation: fadeLeft 0.6s ease-in;
+a:hover {
+    opacity: 60%;
 }
 
-.padding {
-    padding: 3% 0% 7%;
+.righty {
+    text-align: right;
 }
 
-.center {
-    margin: auto;
+.corner {
+    border-radius: 12px;
 }
 
-.round-image {
-    border-radius: 20px;
+.robin-yao {
     width: 500px;
     height: 386.5px;
     position: absolute;
 }
 
-.another-round-image {
-    border-radius: 20px;
+.dong-ho {
     width: 500px;
     height: 326.6px;
 }
@@ -108,24 +102,12 @@ a {
     background-color: rgba(229, 181, 125, 0.4);
 }
 
-.about-section {
-    width: 90%;
-    padding: 3% 5.5% 7%;
-    color: #A11A1c;
-    background-color: white;
-    position: relative;
-    margin: auto;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+.fadeDown {
+    animation: fadeIn 0.6s ease-in;
 }
 
-.fab:hover {
-    opacity: 50%;
-}
-
-footer {
-    text-align: center;
-    color: #A11A1c;
+.fadeLeft {
+    animation: fadeLeft 0.6s ease-in;
 }
 
 @keyframes fadeIn {
@@ -157,10 +139,10 @@ footer {
     transition: opacity 1200ms ease-out, transform 600ms ease-out,
       visibility 1200ms ease-out;
     will-change: opacity, transform, visibility;
-  }
-  .fade-in-section.is-visible {
+}
+
+.fade-in-section.is-visible {
     opacity: 1;
     transform: none;
     visibility: visible;
-  }
-  
+}
