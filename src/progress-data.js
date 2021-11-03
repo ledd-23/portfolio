@@ -1,4 +1,4 @@
-const progress = {
+const languages = {
     "C": 50,
     "Java": 75,
     "Go": 60,
@@ -12,6 +12,6 @@ const libraries = {
     "OpenSHMEM": 60,
 }
 
-export default progress;
+export default languages;
 
 export {libraries};
