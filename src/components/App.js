@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -8,9 +8,12 @@ import Link from "./Link";
 
 import languages, {libraries} from "../progress-data";
 import socials, {icons} from "../social-media";
-import projects from "../projects";
+import projects, {images} from "../projects";
 
 function App() {
+
+  const [link, setLink] = useState("https://replit.com/@ledd-23/IPC?lite=true&embed=true");
+
   return (
     <div>
         <Header /> {/*navbar header*/}
@@ -103,15 +106,32 @@ function App() {
                   <h3 className="righty">experiences</h3>
                 </FadeInSection>
                 
-                <div className="col-lg-6 pt-3">
-                    will be adding buttons to toggle between projects 👷
-                </div> 
+                <div className="col-lg-6">
+                  <FadeInSection>
+                    <div className="row">
+                      {Object.keys(projects).map((project, index) => {
+                          return (
+                            <div className="col-4" style={{textAlign: "center"}}>
+                              <div>
+                                <button type="button" class="btn" onClick={
+                                  function(){
+                                    setLink(projects[project]);
+                                  }
+                                }><img width="100" height="100" src={images[project]}></img>
+                                </button>
+                              </div>
+                            </div>
+                          )
+                      })}
+                    </div>
+                  </FadeInSection>
+                </div> {/*project togglers*/}
               
                 <div className="col-lg-6">
                   <FadeInSection>
-                    <iframe id="replit" className="corner" frameBorder="0" width="100%" height="500px" src="https://replit.com/@ledd-23/IPC?lite=true&embed=true"></iframe>
-                  </FadeInSection>
-                </div> 
+                    <iframe id="replit" className="corner" frameBorder="0" width="100%" height="500px" src={link}></iframe>
+                  </FadeInSection>  
+                </div> {/*replit project*/}
 
             </div> {/*experinces*/}
 
