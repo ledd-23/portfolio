@@ -1,6 +1,13 @@
 import React from "react";
-import Item from "./Item"
-import sections from "../sections"
+import sections from "../sections";
+
+function Item(props) {
+    return (
+    <li className="nav-item px-2">
+        <a className="nav-link" href={props.nav}>{props.name}</a>
+    </li>
+    );
+}
 
 function Header() {
 

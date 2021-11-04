@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Link(props) {
     return (
         <a className="btn mx-1" href={props.link} role="button" style={{color: "#A11A1c"}}>
@@ -8,6 +7,5 @@ function Link(props) {
         </a>
     );
 }
-
 
 export default Link;
