@@ -2,7 +2,8 @@ const sections = [
     "home",
     "about",
     "skills",
-    "portfolio"
+    "portfolio",
+    "misc."
 ]
 
 export default sections;

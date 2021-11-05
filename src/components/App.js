@@ -12,7 +12,7 @@ import projects, {images} from "../projects";
 
 function App() {
 
-  const [link, setLink] = useState("https://replit.com/@ledd-23/IPC?lite=true&embed=true");
+  const [link, setLink] = useState("https://replit.com/@ledd-23/Raft?lite=true&embed=true"); /*project link hook*/
 
   return (
     <div>
@@ -65,7 +65,7 @@ function App() {
               
               <div className="righty col-lg-6 px-5">
                 <FadeInSection>
-                    <h3>about me</h3>
+                    <h3>about me 🧍</h3>
                     <p>
                       i was born in hà nội, việt nam.
                       i play the piano 🎹. my favorite composer is chopin.
@@ -84,18 +84,18 @@ function App() {
           
             <div id="skills" className="row">
                 <FadeInSection>
-                  <h3>skills</h3>
+                  <h3>skills ⚙️</h3>
                 </FadeInSection>
 
                 <div className="col-lg-6">
                   <FadeInSection>
-                    {Collection(languages, "programming languages")}
+                    {Collection(languages, "programming languages ⌨️")}
                   </FadeInSection>
                 </div> {/*programming lanugages*/}
               
                 <div className="col-lg-6">
                   <FadeInSection>
-                    {Collection(libraries, "libraries")}
+                    {Collection(libraries, "libraries 📚")}
                   </FadeInSection>
                 </div> {/*libraries*/}
 
@@ -103,7 +103,7 @@ function App() {
 
             <div id="portfolio" className="row pt-5">
                 <FadeInSection>
-                  <h3 className="righty">experiences</h3>
+                  <h3 className="righty">experience 🧗‍♂️</h3>
                 </FadeInSection>
                 
                 <div className="col-lg-6">
@@ -111,14 +111,15 @@ function App() {
                     <div className="row">
                       {Object.keys(projects).map((project, index) => {
                           return (
-                            <div className="col-4" style={{textAlign: "center"}}>
+                            <div className="col-4 py-3" style={{textAlign: "center"}}>
                               <div>
                                 <button type="button" class="btn" onClick={
-                                  function(){
-                                    setLink(projects[project]);
-                                  }
-                                }><img width="100" height="100" src={images[project]}></img>
-                                </button>
+                                    function(){
+                                      setLink(projects[project]);
+                                    }
+                                }>
+                                  <img alt={project} width="100" height="100" src={images[project]}></img>
+                                </button> {/*individual toggler*/}
                               </div>
                             </div>
                           )
@@ -129,14 +130,47 @@ function App() {
               
                 <div className="col-lg-6">
                   <FadeInSection>
-                    <iframe id="replit" className="corner" frameBorder="0" width="100%" height="500px" src={link}></iframe>
+                    <iframe id="replit" title="replit display" className="corner" frameBorder="0" width="100%" height="500px" src={link}></iframe>
                   </FadeInSection>  
                 </div> {/*replit project*/}
+                
+            </div> {/*experince*/}
 
-            </div> {/*experinces*/}
-
+            <div id="misc." className="row pt-5">
+              <FadeInSection>
+                <h3>misc. 🎶</h3>
+              </FadeInSection>
+          
+              <div className="col-lg-6">
+                <FadeInSection>
+                  <div className="card mb-3 border-downer-radius border-upper-radius">
+                    <iframe className="border-upper-radius" height="315" src="https://www.youtube.com/embed/nXGHIbpvnRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div className="card-body">
+                      <h5 className="card-title">arabesque</h5>
+                      <p className="card-text">please pardon the quality. this was recorded during the pandemic for my piano lesson.</p>
+                    </div>
+                  </div>
+                </FadeInSection>
+              </div>
+              
+              <div className="col-lg-6">
+                {/*<FadeInSection>
+                    <div className="card mb-3 border-downer-radius border-upper-radius">
+                    <img height="315" src="https://imgflip.com/s/meme/This-Is-Where-Id-Put-My-Trophy-If-I-Had-One.jpg" className="card-img-top" alt="meme"></img>
+                      <div className="card-body">
+                        <h5 className="card-title">drawing</h5>
+                        <p className="card-text">i would put a drawing of mine here.<br/> if i had one.</p>
+                      </div>
+                    </div>
+                </FadeInSection> */}
+              </div>
+            </div>
+                  
+            <div>
+                  🚧 will add more stuff 👷
+            </div>
           </div>
-        </section> {/*about section*/}
+        </section> {/*convuluted section: need fixing*/}
 
         <Footer /> 
     </div>
