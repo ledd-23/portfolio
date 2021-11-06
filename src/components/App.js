@@ -5,10 +5,12 @@ import Footer from "./Footer";
 import Collection from "./Collection";
 import FadeInSection from "./FadeInSection";
 import Link from "./Link";
+import Award from "./Award";
 
 import languages, {libraries} from "../progress-data";
 import socials, {icons} from "../social-media";
 import projects, {images} from "../projects";
+import hackerranks, {udemys} from "../awards";
 
 function App() {
 
@@ -100,8 +102,24 @@ function App() {
                 </div> {/*libraries*/}
 
             </div> {/*skills*/}
+            
+            <FadeInSection>
+              <div id="certificates" className="row pt-2">
+                {
+                  Object.keys(hackerranks).map((award, index) => {
+                    return <Award link={hackerranks[award]} color="white" icon="fa-award" key={index} issuer="hackerrank" name={award}/>
+                  })
+                }
 
-            <div id="portfolio" className="row pt-5">
+                {
+                  Object.keys(udemys).map((award, index) => {
+                    return <Award link={udemys[award]} color="purple" icon="fa-chevron-up" key={index} issuer="udemy" name={award}/>
+                  })
+                }
+              </div>
+            </FadeInSection>
+
+            <div id="portfolio" className="row pt-4">
                 <FadeInSection>
                   <h3 className="righty">experience 🧗‍♂️</h3>
                 </FadeInSection>
@@ -124,6 +142,13 @@ function App() {
                             </div>
                           )
                       })}
+                            <div className="col-4 py-3" style={{textAlign: "center"}}>
+                              <div>
+                                <a href="https://youtu.be/dQw4w9WgXcQ" type="button" class="btn">
+                                  <img alt="mystery" width="90" height="90" src="https://cdn0.iconfinder.com/data/icons/video-games-ultra-color/60/001_-_Mystery_Box-512.png"></img>
+                                </a> {/*individual toggler*/}
+                              </div>
+                            </div>
                     </div>
                   </FadeInSection>
                 </div> {/*project togglers*/}
@@ -138,7 +163,7 @@ function App() {
 
             <div id="misc." className="row pt-5">
               <FadeInSection>
-                <h3>misc. 🎶</h3>
+                <h3>misc. 🎵</h3>
               </FadeInSection>
           
               <div className="col-lg-6">
@@ -166,9 +191,6 @@ function App() {
               </div>
             </div>
                   
-            <div>
-                  🚧 will add more stuff 👷
-            </div>
           </div>
         </section> {/*convuluted section: need fixing*/}
 
