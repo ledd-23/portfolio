@@ -76,7 +76,7 @@ function App() {
                     <p>
                       i fell in love with computer science in college.
                       my passion is distributed and parallel systems, but
-                      im learning ui/ux desgin and drawing too. 
+                      im learning ui/ux desgin and drawing as a hobby too. 
                       i think they are very expressive.
                     </p>
                   </FadeInSection>
@@ -179,21 +179,13 @@ function App() {
               </div>
               
               <div className="col-lg-6">
-                {/*<FadeInSection>
-                    <div className="card mb-3 border-downer-radius border-upper-radius">
-                    <img height="315" src="https://imgflip.com/s/meme/This-Is-Where-Id-Put-My-Trophy-If-I-Had-One.jpg" className="card-img-top" alt="meme"></img>
-                      <div className="card-body">
-                        <h5 className="card-title">drawing</h5>
-                        <p className="card-text">i would put a drawing of mine here.<br/> if i had one.</p>
-                      </div>
-                    </div>
-                </FadeInSection> */}
+               
               </div>
             </div>
                   
           </div>
         </section> {/*convuluted section: need fixing*/}
-
+        
         <Footer /> 
     </div>
   );
