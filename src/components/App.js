@@ -28,7 +28,7 @@ function App() {
                 <FadeInSection>
                   <h5>my name is danh le,</h5>
                   <h2>im a &lt;computer science&gt; major <br/>at rhodes college</h2>
-                  <p>nice to meet you</p>
+                  <p>nice to meet you</p> {/*introduction*/}
                   
                   <div>
                     {Object.keys(socials).map((social, index) => {
@@ -36,14 +36,14 @@ function App() {
                           <Link icon={icons[social]} key={index} name={social} link={socials[social]}/>
                       )
                     })}
-                  </div>
+                  </div> {/*social media*/}
                 </FadeInSection>
 
               </div> {/*introduction and links*/}
 
               <div className="col-lg-6 ps-5">
                 <FadeInSection>
-                  <a href="https://tudoujie.tumblr.com/post/173995119408/more-rooms-1st-3rd-are-yuzus-rooms">
+                  <a title="Yuzu illustration by Robin Yao" href="https://tudoujie.tumblr.com/post/173995119408/more-rooms-1st-3rd-are-yuzus-rooms">
                     <img alt="robin-yao" className="d-none d-lg-block corner robin-yao" src="https://64.media.tumblr.com/02909edb8f87a02cdabc64112cb4663a/tumblr_p8vodwGvb61uzdx4lo1_1280.png"></img>
                   </a>
                 </FadeInSection>
@@ -51,7 +51,7 @@ function App() {
 
             </div>
           </div>
-        </section>
+        </section> {/*title section*/}
 
         <section className="about-section corner">
           <div className="container-fluid">
@@ -59,7 +59,7 @@ function App() {
               
               <div className="col-lg-6">
                 <FadeInSection>
-                  <a href="https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting">
+                  <a title="Dong Ho painting" href="https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting">
                     <img alt="dong-ho" className="corner dong-ho" src="https://www.vietnam-culture.com/wp-content/uploads/2014/02/Dong-Ho-Painting.jpg"></img>
                   </a>
                 </FadeInSection> 
@@ -109,20 +109,21 @@ function App() {
                   Object.keys(hackerranks).map((award, index) => {
                     return <Award link={hackerranks[award]} color="white" icon="fa-award" key={index} issuer="hackerrank" name={award}/>
                   })
-                }
+                } {/*hackerrank*/}
 
                 {
                   Object.keys(udemys).map((award, index) => {
                     return <Award link={udemys[award]} color="purple" icon="fa-chevron-up" key={index} issuer="udemy" name={award}/>
                   })
-                }
-                <a href="https://catalog.rhodes.edu/programs-study/mathematics-and-computer-science/requirements-major-computer-science" className="foldtr col-lg-1 col-sm-2 mx-3 my-3 rhodes">
-                  <img height="50.9" className="py-3" src="https://www.rhodes.edu/themes/custom/rhodes/logo.svg"></img>
+                } {/*udemy*/}
+
+                <a title="Computer Science" href="https://catalog.rhodes.edu/programs-study/mathematics-and-computer-science/requirements-major-computer-science" className="foldtr col-lg-1 col-sm-2 mx-3 my-3 rhodes">
+                  <img alt="rhodes" height="50.9" className="py-3" src="https://www.rhodes.edu/themes/custom/rhodes/logo.svg"></img>
                   <p className="py-1">Comp. Sci.</p>
                   <p><strong>Major</strong></p>
-                </a>
-              </div>
-            </FadeInSection>
+                </a> {/*rhodes college*/}
+              </div> 
+            </FadeInSection> {/*certificates*/}
 
             <div id="portfolio" className="row pt-4">
                 <FadeInSection>
@@ -132,7 +133,7 @@ function App() {
                 <div className="col-lg-6">
                   <FadeInSection>
                     <div className="row">
-                      {Object.keys(projects).map((project, index) => {
+                      {Object.keys(projects).map((project) => {
                           return (
                             <div className="col-4 py-3" style={{textAlign: "center"}}>
                               <div>
@@ -140,8 +141,8 @@ function App() {
                                     function(){
                                       setLink(projects[project]);
                                     }
-                                }>
-                                  <img alt={project} width="100" height="100" src={images[project]}></img>
+                                  }>
+                                  <img title={project} alt={project} width="100" height="100" src={images[project]}></img>
                                 </button> {/*individual toggler*/}
                               </div>
                             </div>
@@ -149,11 +150,11 @@ function App() {
                       })}
                             <div className="col-4 py-3" style={{textAlign: "center"}}>
                               <div>
-                                <a href="https://youtu.be/dQw4w9WgXcQ" type="button" class="btn">
+                                <a title="Mystery" href="https://youtu.be/dQw4w9WgXcQ" type="button" class="btn">
                                   <img alt="mystery" width="90" height="90" src="https://cdn0.iconfinder.com/data/icons/video-games-ultra-color/60/001_-_Mystery_Box-512.png"></img>
-                                </a> {/*individual toggler*/}
+                                </a> 
                               </div>
-                            </div>
+                            </div> {/*rick roll'd*/}
                     </div>
                   </FadeInSection>
                 </div> {/*project togglers*/}

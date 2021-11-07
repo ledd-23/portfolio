@@ -8,7 +8,7 @@ function Collection(collection, name) {
             {Object.keys(collection).map((key, index) => {
                 return (
                     <div className="ps-3">
-                        <ProgressBar key={index} now={collection[key]} />
+                        <ProgressBar title={collection[key] + "%"} key={index} now={collection[key]} />
                         <p>{key}</p>
                     </div>
                 );
