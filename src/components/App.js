@@ -116,6 +116,11 @@ function App() {
                     return <Award link={udemys[award]} color="purple" icon="fa-chevron-up" key={index} issuer="udemy" name={award}/>
                   })
                 }
+                <a href="https://catalog.rhodes.edu/programs-study/mathematics-and-computer-science/requirements-major-computer-science" className="foldtr col-lg-1 col-sm-2 mx-3 my-3 rhodes">
+                  <img height="50.9" className="py-3" src="https://www.rhodes.edu/themes/custom/rhodes/logo.svg"></img>
+                  <p className="py-1">Comp. Sci.</p>
+                  <p><strong>Major</strong></p>
+                </a>
               </div>
             </FadeInSection>
 
