@@ -19,7 +19,9 @@ function Header() {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <span className="signature d-none d-lg-block">Danh Le</span>
+
+            <div className="collapse navbar-collapse justify-content-end nav-items" id="navbarNav">
                 <ul className="navbar-nav">
                     {sections.map((section, index) => {
                         return <Item nav={"#" + section} key={index} name={section} />
