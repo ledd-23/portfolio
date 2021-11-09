@@ -14,7 +14,7 @@ import hackerranks, {udemys} from "../awards";
 
 function App() {
 
-  const [link, setLink] = useState("https://replit.com/@ledd-23/Raft?lite=true&embed=true"); /*project link hook*/
+  const [link, setLink] = useState("https://replit.com/@ledd-23/Raft?lite=true"); /*project link hook*/
 
   return (
     <div>

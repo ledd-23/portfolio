@@ -1,9 +1,9 @@
 const projects = {
-    "Raft" : "https://replit.com/@ledd-23/Raft?lite=true&embed=true",
-    "MapReduce": "https://replit.com/@ledd-23/mapreduce?lite=true&embed=true",
-    "IPC" : "https://replit.com/@ledd-23/IPC?lite=true&embed=true",
-    "Sentiment Analysis": "https://replit.com/@ledd-23/sentiment-analysis?lite=true&embed=true",
-    "Autocorrector": "https://replit.com/@ledd-23/autocorrector?lite=true&embed=true"
+    "Raft" : "https://replit.com/@ledd-23/Raft?lite=true",
+    "MapReduce": "https://replit.com/@ledd-23/mapreduce?lite=true",
+    "IPC" : "https://replit.com/@ledd-23/IPC?lite=true",
+    "Sentiment Analysis": "https://replit.com/@ledd-23/sentiment-analysis?lite=true",
+    "Autocorrector": "https://replit.com/@ledd-23/autocorrector?lite=true"
 }
 
 const images = {
