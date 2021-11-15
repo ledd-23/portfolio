@@ -15,6 +15,7 @@ import hackerranks, {udemys} from "../awards";
 function App() {
 
   const [link, setLink] = useState("https://replit.com/@ledd-23/Raft?lite=true"); /*project link hook*/
+  const [embed, setEmbed] = useState("");
 
   return (
     <div>
@@ -129,7 +130,15 @@ function App() {
                 <FadeInSection>
                   <h3 className="righty">experience 🧗‍♂️</h3>
                 </FadeInSection>
-                
+                <button style={{textAlign: "right"}} type="button" class="btn" onClick={
+                    function(){
+                        if (embed === ""){
+                          setEmbed("&embed=true");
+                        } else {
+                          setEmbed("");
+                        }
+                    }
+                }>Click me</button> {/*embed style toggler*/}
                 <div className="col-lg-6">
                   <FadeInSection>
                     <div className="row">
@@ -140,6 +149,7 @@ function App() {
                                 <button type="button" class="btn" onClick={
                                     function(){
                                       setLink(projects[project]);
+
                                     }
                                   }>
                                   <img title={project} alt={project} width="100" height="100" src={images[project]}></img>
@@ -159,9 +169,11 @@ function App() {
                   </FadeInSection>
                 </div> {/*project togglers*/}
               
-                <div className="col-lg-6">
+                <div className="col-lg-6 corner">
                   <FadeInSection>
-                    <iframe id="replit" title="replit display" className="corner" frameBorder="0" width="100%" height="500px" src={link}></iframe>
+                    <iframe id="replit" title="replit display" className="corner" frameBorder="0" width="100%" height="500px" src={link + embed}>
+
+                    </iframe>
                   </FadeInSection>  
                 </div> {/*replit project*/}
                 
@@ -177,7 +189,7 @@ function App() {
                   <div className="card mb-3 border-downer-radius border-upper-radius">
                     <iframe className="border-upper-radius" height="315" src="https://www.youtube.com/embed/nXGHIbpvnRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="card-body">
-                      <h5 className="card-title">arabesque</h5>
+                      <h5 className="card-title">piano</h5>
                       <p className="card-text">please pardon the quality. this was recorded during the pandemic for my piano lesson.</p>
                     </div>
                   </div>
