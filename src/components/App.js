@@ -130,7 +130,7 @@ function App() {
                 <FadeInSection>
                   <h3 className="righty">experience 🧗‍♂️</h3>
                 </FadeInSection>
-                <button style={{textAlign: "right"}} type="button" class="btn" onClick={
+                {/*<button style={{textAlign: "right"}} type="button" class="btn" onClick={
                     function(){
                         if (embed === ""){
                           setEmbed("&embed=true");
