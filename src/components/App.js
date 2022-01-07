@@ -28,9 +28,9 @@ function App() {
               <div className="col-lg-6">
                 <FadeInSection>
                   <h5>my name is danh le,</h5>
-                  <h2>im a &lt;computer science&gt; major <br/>at rhodes college</h2>
+                  <h2>im a &lt;computer science&gt; major <br/>at rhodes college.</h2>
                   <p>nice to meet you</p> {/*introduction*/}
-                  
+
                   <div>
                     {Object.keys(socials).map((social, index) => {
                       return (
@@ -56,35 +56,39 @@ function App() {
 
         <section className="about-section corner">
           <div className="container-fluid">
-            <div className="row mb-5" id="about"> 
-              
+            <div className="row mb-5" id="about">
+
               <div className="col-lg-6">
                 <FadeInSection>
                   <a title="Dong Ho painting" href="https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting">
                     <img alt="dong-ho" className="corner dong-ho" src="https://www.vietnam-culture.com/wp-content/uploads/2014/02/Dong-Ho-Painting.jpg"></img>
                   </a>
-                </FadeInSection> 
+                </FadeInSection>
               </div> {/*dong ho painting*/}
-              
+
               <div className="righty col-lg-6 px-5">
                 <FadeInSection>
                     <h3>about me 🧍</h3>
                     <p>
-                      i was born in hà nội, việt nam.
+                      i was born in hanoi, vietnam.
                       i play the piano 🎹. my favorite composer is chopin.
                       i often play video games 🎮 and occasionally basketball 🏀 too.
                     </p>
                     <p>
                       i fell in love with computer science in college.
                       my passion is distributed and parallel systems, but
-                      im learning ui/ux desgin and drawing as a hobby too. 
-                      i think they are very expressive.
+                      im learning ui/ux desgin and drawing as a hobby too.
+                    </p>
+                    <p>
+                      i'm currently doing parallel computing research in task depedency
+                      and task locality in a work stealing system. i'm also interning
+                      at blackrock for summer 2022 as an aladdin product group analyst.
                     </p>
                   </FadeInSection>
               </div> {/*short about introduction*/}
 
-            </div> 
-          
+            </div>
+
             <div id="skills" className="row">
                 <FadeInSection>
                   <h3>skills ⚙️</h3>
@@ -95,7 +99,7 @@ function App() {
                     {Collection(languages, "programming languages ⌨️")}
                   </FadeInSection>
                 </div> {/*programming lanugages*/}
-              
+
                 <div className="col-lg-6">
                   <FadeInSection>
                     {Collection(libraries, "libraries 📚")}
@@ -103,7 +107,7 @@ function App() {
                 </div> {/*libraries*/}
 
             </div> {/*skills*/}
-            
+
             <FadeInSection>
               <div id="certificates" className="row pt-2">
                 {
@@ -123,7 +127,7 @@ function App() {
                   <p className="py-1">Comp. Sci.</p>
                   <p><strong>Major</strong></p>
                 </a> {/*rhodes college*/}
-              </div> 
+              </div>
             </FadeInSection> {/*certificates*/}
 
             <div id="portfolio" className="row pt-4">
@@ -158,32 +162,40 @@ function App() {
                             </div>
                           )
                       })}
+                            <div className="col-4 py-3 text-center">
+                              <div>
+                                <a title="ConCat Academy" href="https://concatacademy.herokuapp.com/" type="button" class="btn">
+                                  <img alt="concatacademy" height="90" src="https://i.imgur.com/P14sOUo.png"></img>
+                                </a>
+                              </div>
+                            </div> {/*concat academy*/}
+
                             <div className="col-4 py-3" style={{textAlign: "center"}}>
                               <div>
                                 <a title="Mystery" href="https://youtu.be/dQw4w9WgXcQ" type="button" class="btn">
                                   <img alt="mystery" width="90" height="90" src="https://cdn0.iconfinder.com/data/icons/video-games-ultra-color/60/001_-_Mystery_Box-512.png"></img>
-                                </a> 
+                                </a>
                               </div>
                             </div> {/*rick roll'd*/}
                     </div>
                   </FadeInSection>
                 </div> {/*project togglers*/}
-              
+
                 <div className="col-lg-6 corner">
                   <FadeInSection>
                     <iframe id="replit" title="replit display" className="corner" frameBorder="0" width="100%" height="500px" src={link + embed}>
 
                     </iframe>
-                  </FadeInSection>  
+                  </FadeInSection>
                 </div> {/*replit project*/}
-                
+
             </div> {/*experince*/}
 
             <div id="misc." className="row pt-5">
               <FadeInSection>
                 <h3>misc. 🎵</h3>
               </FadeInSection>
-          
+
               <div className="col-lg-6">
                 <FadeInSection>
                   <div className="card mb-3 border-downer-radius border-upper-radius">
@@ -195,16 +207,16 @@ function App() {
                   </div>
                 </FadeInSection>
               </div>
-              
+
               <div className="col-lg-6">
-               
+
               </div>
             </div>
-                  
+
           </div>
         </section> {/*convuluted section: need fixing*/}
-        
-        <Footer /> 
+
+        <Footer />
     </div>
   );
 }
