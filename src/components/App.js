@@ -80,8 +80,8 @@ function App() {
                       im learning ui/ux desgin and drawing as a hobby too.
                     </p>
                     <p>
-                      i'm currently doing parallel computing research in task depedency
-                      and task locality in a work stealing system. i'm also interning
+                      im currently doing parallel computing research in task depedency
+                      and task locality in a work stealing system. im also interning
                       at blackrock for summer 2022 as an aladdin product group analyst.
                     </p>
                   </FadeInSection>
