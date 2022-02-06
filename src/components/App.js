@@ -42,7 +42,7 @@ function App() {
 
               </div> {/*introduction and links*/}
 
-              <div className="col-lg-6 ps-5">
+              <div className="col-lg-6" style={{paddingLeft: "5rem"}}>
                 <FadeInSection>
                   <a title="Yuzu illustration by Robin Yao" href="https://tudoujie.tumblr.com/post/173995119408/more-rooms-1st-3rd-are-yuzus-rooms">
                     <img alt="robin-yao" className="d-none d-lg-block corner robin-yao" src="https://64.media.tumblr.com/02909edb8f87a02cdabc64112cb4663a/tumblr_p8vodwGvb61uzdx4lo1_1280.png"></img>
@@ -66,7 +66,7 @@ function App() {
                 </FadeInSection>
               </div> {/*dong ho painting*/}
 
-              <div className="righty col-lg-6 px-5">
+              <div className="righty col-lg-6">
                 <FadeInSection>
                     <h3>about me 🧍</h3>
                     <p>
