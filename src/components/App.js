@@ -165,7 +165,7 @@ function App() {
                             <div className="col-4 py-3 text-center">
                               <div>
                                 <a title="ConCat Academy" href="https://concatacademy.herokuapp.com/" type="button" class="btn">
-                                  <img alt="concatacademy" height="90" src="https://i.imgur.com/P14sOUo.png"></img>
+                                  <img alt="concatacademy" height="90" src="https://i.imgur.com/qLbeogx.png"></img>
                                 </a>
                               </div>
                             </div> {/*concat academy*/}
