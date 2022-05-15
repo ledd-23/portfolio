@@ -74,16 +74,6 @@ function App() {
                       i play the piano 🎹. my favorite composer is chopin.
                       i often play video games 🎮 and occasionally basketball 🏀 too.
                     </p>
-                    <p>
-                      i fell in love with computer science in college.
-                      my passion is distributed and parallel systems, but
-                      im learning ui/ux desgin and drawing as a hobby too.
-                    </p>
-                    <p>
-                      im currently doing parallel computing research in task depedency
-                      and task locality in a work stealing system. im also interning
-                      at blackrock for summer 2022 as an aladdin product group analyst.
-                    </p>
                   </FadeInSection>
               </div> {/*short about introduction*/}
 
