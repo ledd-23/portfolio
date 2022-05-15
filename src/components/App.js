@@ -28,7 +28,7 @@ function App() {
               <div className="col-lg-6">
                 <FadeInSection>
                   <h5>my name is danh le,</h5>
-                  <h2>im a &lt;computer science&gt; major <br/>at rhodes college.</h2>
+                  <h2>im a &lt;computer science/&gt; major.</h2>
                   <p>nice to meet you</p> {/*introduction*/}
 
                   <div>
@@ -192,7 +192,7 @@ function App() {
                     <iframe className="border-upper-radius" height="315" src="https://www.youtube.com/embed/nXGHIbpvnRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="card-body">
                       <h5 className="card-title">piano</h5>
-                      <p className="card-text">please pardon the quality. this was recorded during the pandemic for my piano lesson.</p>
+                      <p className="card-text"></p>
                     </div>
                   </div>
                 </FadeInSection>
