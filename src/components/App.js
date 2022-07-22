@@ -120,7 +120,7 @@ function App() {
               </div>
             </FadeInSection> {/*certificates*/}
 
-            <div id="portfolio" className="row pt-4">
+            <div id="experience" className="row pt-4">
                 <FadeInSection>
                   <h3 className="righty">experience 🧗‍♂️</h3>
                 </FadeInSection>
@@ -154,7 +154,7 @@ function App() {
                       })}
                             <div className="col-4 py-3 text-center">
                               <div>
-                                <a title="ConCat Academy" href="https://concatacademy.herokuapp.com/" type="button" class="btn">
+                                <a title="ConCat Academy" href="https://concatacademy.herokuapp.com/" target="_blank" type="button" class="btn">
                                   <img alt="concatacademy" height="90" src="https://i.imgur.com/qLbeogx.png"></img>
                                 </a>
                               </div>
@@ -162,7 +162,7 @@ function App() {
 
                             <div className="col-4 py-3" style={{textAlign: "center"}}>
                               <div>
-                                <a title="Mystery" href="https://youtu.be/dQw4w9WgXcQ" type="button" class="btn">
+                                <a title="Mystery" href="https://youtu.be/dQw4w9WgXcQ" target="_blank" type="button" class="btn">
                                   <img alt="mystery" width="90" height="90" src="https://cdn0.iconfinder.com/data/icons/video-games-ultra-color/60/001_-_Mystery_Box-512.png"></img>
                                 </a>
                               </div>
@@ -173,7 +173,7 @@ function App() {
 
                 <div className="col-lg-6 corner">
                   <FadeInSection>
-                    <iframe id="replit" title="replit display" className="corner" frameBorder="0" width="100%" height="500px" src={link + embed}>
+                    <iframe id="replit" title="replit display" className="corner" frameBorder="0" scrolling="no" width="100%" height="500px" src={link + embed}>
 
                     </iframe>
                   </FadeInSection>
