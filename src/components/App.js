@@ -70,9 +70,9 @@ function App() {
                 <FadeInSection>
                     <h3>about me 🧍</h3>
                     <p>
-                      i was born in hanoi, vietnam.
-                      i play the piano 🎹. my favorite composer is chopin.
-                      i often play video games 🎮 and occasionally basketball 🏀 too.
+                      i was born in vietnam.
+                      i play the piano 🎹. my favorite composer is chopin. 
+                      i also like playing video games 🎮 and reading books 📖.
                     </p>
                   </FadeInSection>
               </div> {/*short about introduction*/}
@@ -86,15 +86,15 @@ function App() {
 
                 <div className="col-lg-6">
                   <FadeInSection>
-                    {Collection(languages, "programming languages ⌨️")}
+                    {Collection(languages, "languages and tools ⌨️")}
                   </FadeInSection>
-                </div> {/*programming lanugages*/}
+                </div> {/*programming languages*/}
 
                 <div className="col-lg-6">
                   <FadeInSection>
-                    {Collection(libraries, "libraries 📚")}
+                    {Collection(libraries, "frameworks 📚")}
                   </FadeInSection>
-                </div> {/*libraries*/}
+                </div> {/*frameworks*/}
 
             </div> {/*skills*/}
 
@@ -189,10 +189,10 @@ function App() {
               <div className="col-lg-6">
                 <FadeInSection>
                   <div className="card mb-3 border-downer-radius border-upper-radius">
-                    <iframe className="border-upper-radius" height="315" src="https://www.youtube.com/embed/nXGHIbpvnRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className="border-upper-radius" height="315" src="https://youtube.com/embed/9mqp1pzRPBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="card-body">
-                      <h5 className="card-title">piano</h5>
-                      <p className="card-text"></p>
+                      <h5 className="card-title">my favorite piece</h5>
+                      <p className="card-text">chopin's andante spianato and grande polonaise brillante, op. 22 by dang thai son, first asian international chopin piano competition winner.</p>
                     </div>
                   </div>
                 </FadeInSection>
@@ -204,7 +204,7 @@ function App() {
             </div>
 
           </div>
-        </section> {/*convuluted section: need fixing*/}
+        </section> {/*convoluted section: need fixing*/}
 
         <Footer />
     </div>

@@ -1,15 +1,12 @@
 const languages = {
-    "C": 50,
-    "Java": 75,
-    "Go": 60,
-    "Python": 70,
-    "HTML/CSS/JavaScript": 75,
+    "Java": 80,
+    "Apache Kafka": 50,
+    "HTML/CSS/JavaScript": 50
 }
 
 const libraries = {
-    "React.js": 70,
-    "Node.js": 65,
-    "OpenSHMEM": 60,
+    "Spring": 75,
+    "React.js": 60,
 }
 
 export default languages;

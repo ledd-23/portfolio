@@ -2,7 +2,7 @@ const sections = [
     "home",
     "about",
     "skills",
-    "portfolio",
+    "experience",
     "misc."
 ]
 
